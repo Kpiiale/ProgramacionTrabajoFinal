@@ -1,6 +1,7 @@
 #pragma once
 #include "Opcion1View.h" 
 #include "Opcion2View.h" 
+#include "Opcion3View.h" 
 
 namespace ProgramacionTrabajoFinal {
 
@@ -179,6 +180,8 @@ namespace ProgramacionTrabajoFinal {
 		opc2->ShowDialog();
 	}
 	private: System::Void Opc3btn_Click(System::Object^ sender, System::EventArgs^ e) {
+		Opcion3View^ opc3 = gcnew Opcion3View();
+		opc3->ShowDialog();
 	}
 	private: System::Void Opc4btn_Click(System::Object^ sender, System::EventArgs^ e) {
  }

@@ -162,6 +162,9 @@
     <EmbeddedResource Include="Opcion2View.resx">
       <DependentUpon>Opcion2View.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Opcion3View.resx">
+      <DependentUpon>Opcion3View.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
