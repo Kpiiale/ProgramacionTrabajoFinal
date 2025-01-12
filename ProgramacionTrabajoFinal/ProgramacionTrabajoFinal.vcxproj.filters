@@ -27,7 +27,10 @@
     <ClInclude Include="Opcion1View.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Opcion2.h">
+    <ClInclude Include="Opcion2View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcion3View.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -46,7 +49,10 @@
     <ClCompile Include="Opcion1View.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Opcion2.cpp">
+    <ClCompile Include="Opcion2View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcion3View.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -36,7 +36,7 @@ namespace ProgramacionTrabajoFinal {
 		}
 	private: System::Windows::Forms::Label^ Opc1lbl;
 	private: System::Windows::Forms::TextBox^ Opc1txt;
-	private: System::Windows::Forms::Label^ Respuesta1lbl;
+
 	private: System::Windows::Forms::Button^ Calcular1btn;
 
 
@@ -60,7 +60,6 @@ namespace ProgramacionTrabajoFinal {
 		{
 			this->Opc1lbl = (gcnew System::Windows::Forms::Label());
 			this->Opc1txt = (gcnew System::Windows::Forms::TextBox());
-			this->Respuesta1lbl = (gcnew System::Windows::Forms::Label());
 			this->Calcular1btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
@@ -80,14 +79,6 @@ namespace ProgramacionTrabajoFinal {
 			this->Opc1txt->Size = System::Drawing::Size(100, 20);
 			this->Opc1txt->TabIndex = 1;
 			// 
-			// Respuesta1lbl
-			// 
-			this->Respuesta1lbl->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->Respuesta1lbl->Location = System::Drawing::Point(38, 133);
-			this->Respuesta1lbl->Name = L"Respuesta1lbl";
-			this->Respuesta1lbl->Size = System::Drawing::Size(208, 32);
-			this->Respuesta1lbl->TabIndex = 2;
-			// 
 			// Calcular1btn
 			// 
 			this->Calcular1btn->Location = System::Drawing::Point(103, 95);
@@ -96,15 +87,14 @@ namespace ProgramacionTrabajoFinal {
 			this->Calcular1btn->TabIndex = 3;
 			this->Calcular1btn->Text = L"Calcular";
 			this->Calcular1btn->UseVisualStyleBackColor = true;
-			this->Calcular1btn->Click += gcnew System::EventHandler(this, &Opcion1View::button1_Click);
+			this->Calcular1btn->Click += gcnew System::EventHandler(this, &Opcion1View::Calcular1btn_Click);
 			// 
 			// Opcion1View
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 186);
+			this->ClientSize = System::Drawing::Size(284, 165);
 			this->Controls->Add(this->Calcular1btn);
-			this->Controls->Add(this->Respuesta1lbl);
 			this->Controls->Add(this->Opc1txt);
 			this->Controls->Add(this->Opc1lbl);
 			this->Name = L"Opcion1View";
@@ -118,15 +108,19 @@ namespace ProgramacionTrabajoFinal {
 
 	private: System::Void Opcion1View_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void Calcular1btn_Click(System::Object^ sender, System::EventArgs^ e) {
 		int num; 
 		if (Int32::TryParse(this->Opc1txt->Text, num)) {
 			if (num % 2 == 0) {
-				this->Respuesta1lbl->Text = L"El número es par. ¡Ha ganado 10 dólares!";
+				MessageBox::Show(L"El número es par.");
+				
 			}
 			else {
-				this->Respuesta1lbl->Text = L"El número es impar. ¡Ha ganado 10 dólares!";
+				MessageBox::Show(L"El número es impar.");
+				
 			}
+			MessageBox::Show(L"¡Ha ganado 10 dólares! ");
+			this->Close();
 		};
 
 	}

@@ -127,6 +127,9 @@
     <ClInclude Include="Opcion2View.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Opcion3View.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +147,7 @@
     <ClCompile Include="MenuGanadorView.cpp" />
     <ClCompile Include="Opcion1View.cpp" />
     <ClCompile Include="Opcion2View.cpp" />
+    <ClCompile Include="Opcion3View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainView.resx">

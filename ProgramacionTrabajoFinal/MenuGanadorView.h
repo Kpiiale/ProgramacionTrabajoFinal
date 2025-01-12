@@ -1,5 +1,6 @@
 #pragma once
 #include "Opcion1View.h" 
+#include "Opcion2View.h" 
 
 namespace ProgramacionTrabajoFinal {
 
@@ -162,6 +163,7 @@ namespace ProgramacionTrabajoFinal {
 			this->Controls->Add(this->SubtituloGlbl);
 			this->Controls->Add(this->TituloGlbl);
 			this->Name = L"MenuGanadorView";
+			this->Load += gcnew System::EventHandler(this, &MenuGanadorView::MenuGanadorView_Load);
 			this->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc4btn_Click);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -173,10 +175,14 @@ namespace ProgramacionTrabajoFinal {
 		opc1->ShowDialog();
 	}
 	private: System::Void Opc2btn_Click(System::Object^ sender, System::EventArgs^ e) {
+		Opcion2View^ opc2 = gcnew Opcion2View();
+		opc2->ShowDialog();
 	}
 	private: System::Void Opc3btn_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void Opc4btn_Click(System::Object^ sender, System::EventArgs^ e) {
  }
+private: System::Void MenuGanadorView_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
