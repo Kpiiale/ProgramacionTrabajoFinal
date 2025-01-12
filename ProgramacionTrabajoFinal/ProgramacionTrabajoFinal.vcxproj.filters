@@ -21,6 +21,15 @@
     <ClInclude Include="MainView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuGanadorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcion1View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcion2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ProgramacionTrabajoFinal.rc">
@@ -29,6 +38,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuGanadorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcion1View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcion2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

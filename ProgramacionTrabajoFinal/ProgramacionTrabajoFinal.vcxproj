@@ -118,6 +118,15 @@
     <ClInclude Include="MainView.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MenuGanadorView.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Opcion1View.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Opcion2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +141,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainView.cpp" />
+    <ClCompile Include="MenuGanadorView.cpp" />
+    <ClCompile Include="Opcion1View.cpp" />
+    <ClCompile Include="Opcion2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGanadorView.resx">
+      <DependentUpon>MenuGanadorView.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion1View.resx">
+      <DependentUpon>Opcion1View.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
