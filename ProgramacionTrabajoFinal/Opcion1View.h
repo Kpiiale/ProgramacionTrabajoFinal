@@ -83,9 +83,9 @@ namespace ProgramacionTrabajoFinal {
 			// Respuesta1lbl
 			// 
 			this->Respuesta1lbl->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->Respuesta1lbl->Location = System::Drawing::Point(66, 133);
+			this->Respuesta1lbl->Location = System::Drawing::Point(38, 133);
 			this->Respuesta1lbl->Name = L"Respuesta1lbl";
-			this->Respuesta1lbl->Size = System::Drawing::Size(149, 32);
+			this->Respuesta1lbl->Size = System::Drawing::Size(208, 32);
 			this->Respuesta1lbl->TabIndex = 2;
 			// 
 			// Calcular1btn

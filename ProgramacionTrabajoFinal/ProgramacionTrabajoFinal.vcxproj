@@ -124,7 +124,7 @@
     <ClInclude Include="Opcion1View.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Opcion2.h">
+    <ClInclude Include="Opcion2View.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="resource.h" />
@@ -143,7 +143,7 @@
     <ClCompile Include="MainView.cpp" />
     <ClCompile Include="MenuGanadorView.cpp" />
     <ClCompile Include="Opcion1View.cpp" />
-    <ClCompile Include="Opcion2.cpp" />
+    <ClCompile Include="Opcion2View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainView.resx">
@@ -154,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Opcion1View.resx">
       <DependentUpon>Opcion1View.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion2View.resx">
+      <DependentUpon>Opcion2View.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

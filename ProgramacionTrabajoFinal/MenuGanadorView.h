@@ -37,10 +37,12 @@ namespace ProgramacionTrabajoFinal {
 		}
 	private: System::Windows::Forms::Label^ TituloGlbl;
 	private: System::Windows::Forms::Label^ SubtituloGlbl;
-	private: System::Windows::Forms::Button^ Opc1lbl;
+	private: System::Windows::Forms::Button^ Opc1btn;
+
 	private: System::Windows::Forms::Button^ Opc2btn;
 	private: System::Windows::Forms::Button^ Opc3btn;
-	private: System::Windows::Forms::Button^ Opc4lbl;
+	private: System::Windows::Forms::Button^ Opc4btn;
+
 	protected:
 
 	protected:
@@ -68,10 +70,10 @@ namespace ProgramacionTrabajoFinal {
 		{
 			this->TituloGlbl = (gcnew System::Windows::Forms::Label());
 			this->SubtituloGlbl = (gcnew System::Windows::Forms::Label());
-			this->Opc1lbl = (gcnew System::Windows::Forms::Button());
+			this->Opc1btn = (gcnew System::Windows::Forms::Button());
 			this->Opc2btn = (gcnew System::Windows::Forms::Button());
 			this->Opc3btn = (gcnew System::Windows::Forms::Button());
-			this->Opc4lbl = (gcnew System::Windows::Forms::Button());
+			this->Opc4btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// TituloGlbl
@@ -96,18 +98,18 @@ namespace ProgramacionTrabajoFinal {
 			this->SubtituloGlbl->TabIndex = 1;
 			this->SubtituloGlbl->Text = L"ELIJA UNA OPCION ";
 			// 
-			// Opc1lbl
+			// Opc1btn
 			// 
-			this->Opc1lbl->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			this->Opc1lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Opc1btn->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			this->Opc1btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Opc1lbl->Location = System::Drawing::Point(80, 128);
-			this->Opc1lbl->Name = L"Opc1lbl";
-			this->Opc1lbl->Size = System::Drawing::Size(394, 44);
-			this->Opc1lbl->TabIndex = 2;
-			this->Opc1lbl->Text = L"Vea si su numero es par o impar mediante operaciones matematicas";
-			this->Opc1lbl->UseVisualStyleBackColor = false;
-			this->Opc1lbl->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc4btn_Click);
+			this->Opc1btn->Location = System::Drawing::Point(80, 128);
+			this->Opc1btn->Name = L"Opc1btn";
+			this->Opc1btn->Size = System::Drawing::Size(394, 44);
+			this->Opc1btn->TabIndex = 2;
+			this->Opc1btn->Text = L"Vea si su numero es par o impar mediante operaciones matematicas";
+			this->Opc1btn->UseVisualStyleBackColor = false;
+			this->Opc1btn->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc1btn_Click);
 			// 
 			// Opc2btn
 			// 
@@ -120,6 +122,7 @@ namespace ProgramacionTrabajoFinal {
 			this->Opc2btn->TabIndex = 3;
 			this->Opc2btn->Text = L"Genere los numeros pares menores o iguales al numero adivinado";
 			this->Opc2btn->UseVisualStyleBackColor = false;
+			this->Opc2btn->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc2btn_Click);
 			// 
 			// Opc3btn
 			// 
@@ -134,30 +137,32 @@ namespace ProgramacionTrabajoFinal {
 			this->Opc3btn->UseVisualStyleBackColor = false;
 			this->Opc3btn->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc3btn_Click);
 			// 
-			// Opc4lbl
+			// Opc4btn
 			// 
-			this->Opc4lbl->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			this->Opc4lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Opc4btn->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			this->Opc4btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Opc4lbl->Location = System::Drawing::Point(80, 334);
-			this->Opc4lbl->Name = L"Opc4lbl";
-			this->Opc4lbl->Size = System::Drawing::Size(394, 35);
-			this->Opc4lbl->TabIndex = 5;
-			this->Opc4lbl->Text = L"Genere una serie";
-			this->Opc4lbl->UseVisualStyleBackColor = false;
+			this->Opc4btn->Location = System::Drawing::Point(80, 334);
+			this->Opc4btn->Name = L"Opc4btn";
+			this->Opc4btn->Size = System::Drawing::Size(394, 35);
+			this->Opc4btn->TabIndex = 5;
+			this->Opc4btn->Text = L"Genere una serie";
+			this->Opc4btn->UseVisualStyleBackColor = false;
+			this->Opc4btn->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc4btn_Click);
 			// 
 			// MenuGanadorView
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(551, 425);
-			this->Controls->Add(this->Opc4lbl);
+			this->Controls->Add(this->Opc4btn);
 			this->Controls->Add(this->Opc3btn);
 			this->Controls->Add(this->Opc2btn);
-			this->Controls->Add(this->Opc1lbl);
+			this->Controls->Add(this->Opc1btn);
 			this->Controls->Add(this->SubtituloGlbl);
 			this->Controls->Add(this->TituloGlbl);
 			this->Name = L"MenuGanadorView";
+			this->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc4btn_Click);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
