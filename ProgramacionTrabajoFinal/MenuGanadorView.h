@@ -2,7 +2,7 @@
 #include "Opcion1View.h" 
 #include "Opcion2View.h" 
 #include "Opcion3View.h" 
-#include "Opcion4View.h" 
+#include "Opcion4View1.h" 
 namespace ProgramacionTrabajoFinal {
 
 	using namespace System;

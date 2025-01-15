@@ -124,7 +124,7 @@ namespace ProgramacionTrabajoFinal {
 			int num = Convert::ToInt32(NumOpc4txt->Text);
 			int n = Convert::ToInt32(IntentOpc4txt->Text);
 			System::Text::StringBuilder^ resultadoSerie = gcnew System::Text::StringBuilder();
-			int serie = num;
+			long long serie = num;
 			for (int i = 1; i <= n; ++i) {
 				resultadoSerie->AppendLine(i.ToString() + L": " + serie.ToString());
 				serie *= 45;
