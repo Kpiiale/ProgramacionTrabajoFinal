@@ -34,7 +34,9 @@ namespace ProgramacionTrabajoFinal {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ Opc2lbl;
+	private: System::Windows::Forms::Label^ Preguntalbl;
+	protected:
+
 	private: System::Windows::Forms::TextBox^ Opc2txt;
 	private: System::Windows::Forms::Button^ Calcular2btn;
 
@@ -54,32 +56,35 @@ namespace ProgramacionTrabajoFinal {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->Opc2lbl = (gcnew System::Windows::Forms::Label());
+			this->Preguntalbl = (gcnew System::Windows::Forms::Label());
 			this->Opc2txt = (gcnew System::Windows::Forms::TextBox());
 			this->Calcular2btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// Opc2lbl
+			// Preguntalbl
 			// 
-			this->Opc2lbl->AutoSize = true;
-			this->Opc2lbl->Location = System::Drawing::Point(66, 9);
-			this->Opc2lbl->Name = L"Opc2lbl";
-			this->Opc2lbl->Size = System::Drawing::Size(152, 13);
-			this->Opc2lbl->TabIndex = 0;
-			this->Opc2lbl->Text = L"Ingrese el numero que adivinó:";
+			this->Preguntalbl->AutoSize = true;
+			this->Preguntalbl->Location = System::Drawing::Point(88, 11);
+			this->Preguntalbl->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Preguntalbl->Name = L"Preguntalbl";
+			this->Preguntalbl->Size = System::Drawing::Size(190, 16);
+			this->Preguntalbl->TabIndex = 0;
+			this->Preguntalbl->Text = L"Ingrese el numero que adivinó:";
 			// 
 			// Opc2txt
 			// 
-			this->Opc2txt->Location = System::Drawing::Point(95, 42);
+			this->Opc2txt->Location = System::Drawing::Point(127, 52);
+			this->Opc2txt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Opc2txt->Name = L"Opc2txt";
-			this->Opc2txt->Size = System::Drawing::Size(100, 20);
+			this->Opc2txt->Size = System::Drawing::Size(132, 22);
 			this->Opc2txt->TabIndex = 1;
 			// 
 			// Calcular2btn
 			// 
-			this->Calcular2btn->Location = System::Drawing::Point(109, 85);
+			this->Calcular2btn->Location = System::Drawing::Point(145, 105);
+			this->Calcular2btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Calcular2btn->Name = L"Calcular2btn";
-			this->Calcular2btn->Size = System::Drawing::Size(75, 23);
+			this->Calcular2btn->Size = System::Drawing::Size(100, 28);
 			this->Calcular2btn->TabIndex = 2;
 			this->Calcular2btn->Text = L"Calcular";
 			this->Calcular2btn->UseVisualStyleBackColor = true;
@@ -87,12 +92,13 @@ namespace ProgramacionTrabajoFinal {
 			// 
 			// Opcion2View
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 138);
+			this->ClientSize = System::Drawing::Size(379, 170);
 			this->Controls->Add(this->Calcular2btn);
 			this->Controls->Add(this->Opc2txt);
-			this->Controls->Add(this->Opc2lbl);
+			this->Controls->Add(this->Preguntalbl);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"Opcion2View";
 			this->ResumeLayout(false);
 			this->PerformLayout();

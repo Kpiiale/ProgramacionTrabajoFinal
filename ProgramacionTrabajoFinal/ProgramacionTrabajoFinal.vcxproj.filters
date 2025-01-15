@@ -33,6 +33,9 @@
     <ClInclude Include="Opcion3View.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Opcion4View1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ProgramacionTrabajoFinal.rc">
@@ -53,6 +56,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Opcion3View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcion4View1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

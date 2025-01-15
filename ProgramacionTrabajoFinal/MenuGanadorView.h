@@ -2,7 +2,7 @@
 #include "Opcion1View.h" 
 #include "Opcion2View.h" 
 #include "Opcion3View.h" 
-
+#include "Opcion4View.h" 
 namespace ProgramacionTrabajoFinal {
 
 	using namespace System;
@@ -164,7 +164,6 @@ namespace ProgramacionTrabajoFinal {
 			this->Controls->Add(this->SubtituloGlbl);
 			this->Controls->Add(this->TituloGlbl);
 			this->Name = L"MenuGanadorView";
-			this->Load += gcnew System::EventHandler(this, &MenuGanadorView::MenuGanadorView_Load);
 			this->Click += gcnew System::EventHandler(this, &MenuGanadorView::Opc4btn_Click);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -184,8 +183,8 @@ namespace ProgramacionTrabajoFinal {
 		opc3->ShowDialog();
 	}
 	private: System::Void Opc4btn_Click(System::Object^ sender, System::EventArgs^ e) {
+		Opcion4View^ opc4 = gcnew Opcion4View();
+		opc4->ShowDialog(); 
  }
-private: System::Void MenuGanadorView_Load(System::Object^ sender, System::EventArgs^ e) {
-}
 };
 }

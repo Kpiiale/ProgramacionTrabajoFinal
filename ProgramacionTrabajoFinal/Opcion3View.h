@@ -34,7 +34,9 @@ namespace ProgramacionTrabajoFinal {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ Opc3lbl;
+	private: System::Windows::Forms::Label^ Preguntalbl;
+	protected:
+
 	private: System::Windows::Forms::TextBox^ Opc3txt;
 	private: System::Windows::Forms::Button^ Calcular3btn;
 	protected:
@@ -56,32 +58,35 @@ namespace ProgramacionTrabajoFinal {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->Opc3lbl = (gcnew System::Windows::Forms::Label());
+			this->Preguntalbl = (gcnew System::Windows::Forms::Label());
 			this->Opc3txt = (gcnew System::Windows::Forms::TextBox());
 			this->Calcular3btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// Opc3lbl
+			// Preguntalbl
 			// 
-			this->Opc3lbl->AutoSize = true;
-			this->Opc3lbl->Location = System::Drawing::Point(74, 9);
-			this->Opc3lbl->Name = L"Opc3lbl";
-			this->Opc3lbl->Size = System::Drawing::Size(149, 13);
-			this->Opc3lbl->TabIndex = 0;
-			this->Opc3lbl->Text = L"Ingrese el número que adivinó";
+			this->Preguntalbl->AutoSize = true;
+			this->Preguntalbl->Location = System::Drawing::Point(99, 11);
+			this->Preguntalbl->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Preguntalbl->Name = L"Preguntalbl";
+			this->Preguntalbl->Size = System::Drawing::Size(187, 16);
+			this->Preguntalbl->TabIndex = 0;
+			this->Preguntalbl->Text = L"Ingrese el número que adivinó";
 			// 
 			// Opc3txt
 			// 
-			this->Opc3txt->Location = System::Drawing::Point(97, 48);
+			this->Opc3txt->Location = System::Drawing::Point(129, 59);
+			this->Opc3txt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Opc3txt->Name = L"Opc3txt";
-			this->Opc3txt->Size = System::Drawing::Size(100, 20);
+			this->Opc3txt->Size = System::Drawing::Size(132, 22);
 			this->Opc3txt->TabIndex = 1;
 			// 
 			// Calcular3btn
 			// 
-			this->Calcular3btn->Location = System::Drawing::Point(113, 104);
+			this->Calcular3btn->Location = System::Drawing::Point(151, 128);
+			this->Calcular3btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Calcular3btn->Name = L"Calcular3btn";
-			this->Calcular3btn->Size = System::Drawing::Size(75, 23);
+			this->Calcular3btn->Size = System::Drawing::Size(100, 28);
 			this->Calcular3btn->TabIndex = 2;
 			this->Calcular3btn->Text = L"Calcular";
 			this->Calcular3btn->UseVisualStyleBackColor = true;
@@ -89,12 +94,13 @@ namespace ProgramacionTrabajoFinal {
 			// 
 			// Opcion3View
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(299, 170);
+			this->ClientSize = System::Drawing::Size(399, 209);
 			this->Controls->Add(this->Calcular3btn);
 			this->Controls->Add(this->Opc3txt);
-			this->Controls->Add(this->Opc3lbl);
+			this->Controls->Add(this->Preguntalbl);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"Opcion3View";
 			this->ResumeLayout(false);
 			this->PerformLayout();

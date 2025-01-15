@@ -34,7 +34,9 @@ namespace ProgramacionTrabajoFinal {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ Opc1lbl;
+	private: System::Windows::Forms::Label^ Preguntalbl;
+	protected:
+
 	private: System::Windows::Forms::TextBox^ Opc1txt;
 
 	private: System::Windows::Forms::Button^ Calcular1btn;
@@ -58,32 +60,35 @@ namespace ProgramacionTrabajoFinal {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->Opc1lbl = (gcnew System::Windows::Forms::Label());
+			this->Preguntalbl = (gcnew System::Windows::Forms::Label());
 			this->Opc1txt = (gcnew System::Windows::Forms::TextBox());
 			this->Calcular1btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// Opc1lbl
+			// Preguntalbl
 			// 
-			this->Opc1lbl->AutoSize = true;
-			this->Opc1lbl->Location = System::Drawing::Point(66, 20);
-			this->Opc1lbl->Name = L"Opc1lbl";
-			this->Opc1lbl->Size = System::Drawing::Size(152, 13);
-			this->Opc1lbl->TabIndex = 0;
-			this->Opc1lbl->Text = L"Ingrese el numero que adivinó:";
+			this->Preguntalbl->AutoSize = true;
+			this->Preguntalbl->Location = System::Drawing::Point(88, 25);
+			this->Preguntalbl->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->Preguntalbl->Name = L"Preguntalbl";
+			this->Preguntalbl->Size = System::Drawing::Size(190, 16);
+			this->Preguntalbl->TabIndex = 0;
+			this->Preguntalbl->Text = L"Ingrese el numero que adivinó:";
 			// 
 			// Opc1txt
 			// 
-			this->Opc1txt->Location = System::Drawing::Point(88, 53);
+			this->Opc1txt->Location = System::Drawing::Point(117, 65);
+			this->Opc1txt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Opc1txt->Name = L"Opc1txt";
-			this->Opc1txt->Size = System::Drawing::Size(100, 20);
+			this->Opc1txt->Size = System::Drawing::Size(132, 22);
 			this->Opc1txt->TabIndex = 1;
 			// 
 			// Calcular1btn
 			// 
-			this->Calcular1btn->Location = System::Drawing::Point(103, 95);
+			this->Calcular1btn->Location = System::Drawing::Point(137, 117);
+			this->Calcular1btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Calcular1btn->Name = L"Calcular1btn";
-			this->Calcular1btn->Size = System::Drawing::Size(75, 23);
+			this->Calcular1btn->Size = System::Drawing::Size(100, 28);
 			this->Calcular1btn->TabIndex = 3;
 			this->Calcular1btn->Text = L"Calcular";
 			this->Calcular1btn->UseVisualStyleBackColor = true;
@@ -91,12 +96,13 @@ namespace ProgramacionTrabajoFinal {
 			// 
 			// Opcion1View
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 165);
+			this->ClientSize = System::Drawing::Size(379, 203);
 			this->Controls->Add(this->Calcular1btn);
 			this->Controls->Add(this->Opc1txt);
-			this->Controls->Add(this->Opc1lbl);
+			this->Controls->Add(this->Preguntalbl);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"Opcion1View";
 			this->Text = L"Opcion1View";
 			this->Load += gcnew System::EventHandler(this, &Opcion1View::Opcion1View_Load);
