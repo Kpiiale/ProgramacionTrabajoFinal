@@ -78,7 +78,7 @@ namespace ProgramacionTrabajoFinal {
 			// Opc1txt
 			// 
 			this->Opc1txt->Location = System::Drawing::Point(117, 65);
-			this->Opc1txt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Opc1txt->Margin = System::Windows::Forms::Padding(4);
 			this->Opc1txt->Name = L"Opc1txt";
 			this->Opc1txt->Size = System::Drawing::Size(132, 22);
 			this->Opc1txt->TabIndex = 1;
@@ -86,7 +86,7 @@ namespace ProgramacionTrabajoFinal {
 			// Calcular1btn
 			// 
 			this->Calcular1btn->Location = System::Drawing::Point(137, 117);
-			this->Calcular1btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Calcular1btn->Margin = System::Windows::Forms::Padding(4);
 			this->Calcular1btn->Name = L"Calcular1btn";
 			this->Calcular1btn->Size = System::Drawing::Size(100, 28);
 			this->Calcular1btn->TabIndex = 3;
@@ -102,9 +102,8 @@ namespace ProgramacionTrabajoFinal {
 			this->Controls->Add(this->Calcular1btn);
 			this->Controls->Add(this->Opc1txt);
 			this->Controls->Add(this->Preguntalbl);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"Opcion1View";
-			this->Text = L"Opcion1View";
 			this->Load += gcnew System::EventHandler(this, &Opcion1View::Opcion1View_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
